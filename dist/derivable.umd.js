@@ -1051,6 +1051,7 @@ var mOr = mOr$1;
 var and = and$1;
 var mAnd = mAnd$1;
 
+exports.Reactor = Reactor;
 exports.transact = transact;
 exports.setDebugMode = setDebugMode;
 exports.transaction = transaction;

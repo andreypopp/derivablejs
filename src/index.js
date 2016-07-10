@@ -4,6 +4,7 @@ import {Derivation} from './derivation';
 import {Lens} from './lens';
 import {Atom} from './atom';
 import {assign} from './util';
+import {Reactor} from './reactors';
 
 import * as derivable from './module';
 
@@ -12,6 +13,7 @@ assign(Lens.prototype, derivablePrototype, mutablePrototype);
 assign(Atom.prototype, derivablePrototype, mutablePrototype);
 
 
+export {Reactor};
 export var transact = derivable.transact;
 export var setDebugMode = derivable.setDebugMode;
 export var transaction = derivable.transaction;
